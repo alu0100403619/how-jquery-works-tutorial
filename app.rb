@@ -1,20 +1,24 @@
 require 'sinatra'
 
+# Los ficheros estaticos estaran en esta ruta
 set :public_folder, File.dirname(__FILE__) + '/starterkit'
 
+#si se visita la pagina raiz devuelve index
 get '/' do
   erb :index
 end
 
+#Si visitas una pagina chuchu
 get '/chuchu' do
-  if request.xhr? # is an ajax request
-    "hello world!"
-  else 
+  if request.xhr? #si es un request ajax
+    "hello world!" #devuelve hellow world
+  else #si no es un request ajax devuelve la pagina tutu
     erb :tutu
   end
 end
 
-__END__
+#Fin de fichero
+__END__ 
 
 @@layout
   <!DOCTYPE html>

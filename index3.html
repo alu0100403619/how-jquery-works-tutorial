@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <style>
-        a.test { font-weight: bold; }
+        a.test { font-weight: bold; } /*Si tiene la clase test lo pones en negrita*/
     </style>
     <title>Demo</title>
 </head>
@@ -14,12 +14,12 @@
  
     $( document ).ready(function() {
         $( "a" ).click(function( event ) {
-            $( "a" ).addClass( "test" );
+            $( "a" ).addClass( "test" ); //Selecciona las anclas y le añadimos una clase
             alert( "The link will no longer take you to jquery.com" );
             event.preventDefault();
-            $( "a" ).removeClass( "test" );
-            $( this ).hide( "slow" );
-            $( this ).show( "slow" );
+            $( "a" ).removeClass( "test" ); //Quitamos la clase y dejará de estar en negrita
+            $( this ).hide( "slow" ); //Esconde el elemento de forma lenta
+            $( this ).show( "slow" ); //Muestra el elemento de forma lenta
         });
     });
  

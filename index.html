@@ -10,6 +10,13 @@
     <script>
  
     // tu codigo va aqui
+    $( document ).ready(function() { //seleccionamos el document, y cuando este cargado ejecutas esta funcion
+        $( "a" ).click(function( event ) { //Si haces click sobre un ancla ejecutas esta funcion
+            alert( "The link will no longer take you to jquery.com" );
+            event.preventDefault(); //evento que ocurre con toda la información, inhibe la conducta por defecto (redireccion)
+        });
+    });
+    // Fin de tu codigo
  
     </script>
 </body>
