@@ -18,7 +18,7 @@ get '/chuchu' do
 end
 
 #Fin de fichero
-__END__ 
+__END__
 
 @@layout
   <!DOCTYPE html>
